@@ -9,6 +9,12 @@ Package license: MIT
 
 Summary: CNN-based audio segmentation toolkit. Does voice activity detection, speech detection, music detection, noise detection, speaker gender recognition.
 
+inaSpeechSegmenter is a CNN-based audio segmentation toolkit suited to the tasks of Voice Activity Detection and Speaker Gender Segmentation.
+It splits audio signals into homogeneous zones of speech, music and noise. Speech zones are split into segments tagged using speaker gender (male or female).
+Male and female classification models are optimized for French language since they were trained using French speakers (acoustic correlates of speaker gender are language dependent).
+Zones corresponding to speech over music or speech over noise are tagged as speech. Singing voice is tagged as music.
+
+
 Current build status
 ====================
 
