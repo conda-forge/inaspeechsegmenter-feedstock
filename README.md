@@ -9,6 +9,9 @@ Package license: MIT
 
 Summary: CNN-based audio segmentation toolkit. Does voice activity detection, speech detection, music detection, noise detection, speaker gender recognition.
 
+inaSpeechSegmenter is a CNN-based audio segmentation toolkit suited to the tasks of Voice Activity Detection and Speaker Gender Segmentation.
+
+
 Current build status
 ====================
 
