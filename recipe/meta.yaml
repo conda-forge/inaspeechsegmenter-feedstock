@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -39,6 +39,7 @@ test:
     - inaSpeechSegmenter
   commands:
     - pip check
+    - ina_speech_segmenter.py --help
   requires:
     - pip
     - python {{ python_min }}
@@ -48,6 +49,8 @@ about:
   summary: CNN-based audio segmentation toolkit. Does voice activity detection, speech detection, music detection, noise detection, speaker gender recognition.
   license: MIT
   license_file: LICENSE
+  description: |
+    inaSpeechSegmenter is a CNN-based audio segmentation toolkit suited to the tasks of Voice Activity Detection and Speaker Gender Segmentation.
 
 extra:
   recipe-maintainers:
