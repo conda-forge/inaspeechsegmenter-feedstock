@@ -31,8 +31,10 @@ requirements:
     - pyro4
     - pytextgrid
     - pysoundfile
-    - onnxruntime *=*_cuda   #not avalaible for osx
-    - __linux
+    - onnxruntime *=*_cuda  # [linux]
+    - onnxruntime  # [osx]
+    - __linux  # [linux]
+    - __osx    # [os
 
 test:
   imports:
