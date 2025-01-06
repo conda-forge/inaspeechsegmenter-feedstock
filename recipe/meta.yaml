@@ -1,5 +1,5 @@
 {% set name = "inaSpeechSegmenter" %}
-{% set version = "0.7.13" %}
+{% set version = "0.7.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/inaSpeechSegmenter-{{ version }}.tar.gz
-  sha256: 506b193ae39a1a19b1e9219cf58493208152ca43f90a41122336ef9612efde9d
+  sha256: 8ff914c015340b284a91d48e77b244cf3524322918b999d9f524aa58ca120a31
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
   noarch: python
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }},<3.13
-    - ffmpeg 
+    - ffmpeg
     - tensorflow   #not avalaible yet on py313 and avalaible windows versions are for older unsupported python version
     - numpy
     - pandas
@@ -33,7 +33,7 @@ requirements:
     - pysoundfile
     - onnxruntime *=*_cuda   #not avalaible for osx
     - __linux
-    
+
 test:
   imports:
     - inaSpeechSegmenter
