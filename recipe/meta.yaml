@@ -34,7 +34,7 @@ requirements:
     - onnxruntime *=*_cuda  # [linux]
     - onnxruntime  # [osx]
     - __linux  # [linux]
-    - __osx    # [os
+    - __osx    # [osx]
 
 test:
   imports:
