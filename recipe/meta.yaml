@@ -11,8 +11,10 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   noarch: python
+  string: "linux_pyh{{ PKG_HASH }}_{{ PKG_BUILDNUM }}"  # [linux]
+  string: "osx_pyh{{ PKG_HASH }}_{{ PKG_BUILDNUM }}"   # [osx]
 
 requirements:
   host:
