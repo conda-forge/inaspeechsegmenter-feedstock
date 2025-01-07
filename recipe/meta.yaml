@@ -24,7 +24,7 @@ requirements:
   run:
     - python >={{ python_min }},<3.13
     - ffmpeg
-    - tensorflow   #not avalaible yet on py313 and avalaible windows versions are for older unsupported python version
+    - tensorflow >2.4   #not avalaible yet on py313 and avalaible windows versions are for older unsupported python version
     - numpy
     - pandas
     - scikit-image
