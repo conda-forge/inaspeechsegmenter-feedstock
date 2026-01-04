@@ -1,0 +1,3 @@
+target_os:
+  - linux  # [linux]
+  - osx    # [osx]
